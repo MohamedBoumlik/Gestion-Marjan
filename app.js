@@ -8,7 +8,6 @@ app.use(bodyparser.urlencoded({extended: true}));
 app.listen(3000);
 
 // ---------------- center admin routes -------------
-
 const admin = require('./routes/adminG/admin.route');
 const cAdmin = require('./routes/adminG/cAdmin.route');
 

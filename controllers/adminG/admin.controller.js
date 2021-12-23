@@ -33,7 +33,7 @@ exports.logAdmin = async(req, res)=> {
     // res.status(200).json(token);
     console.log('admin loged in successfully');
 
-    conn.query(`UPDATE admin SET ? WHERE id =${AdminG.id}`, {
+    conn.query(`UPDATE admin SET ? WHERE id =${CAdmin.id}`, {
       token: token,
     });
     

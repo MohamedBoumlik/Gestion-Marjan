@@ -36,7 +36,7 @@ exports.update_cAdmin = (id,nom,email,password) => {
 }
 
 exports.update_cAdmin_Password = (id,password) => {
-    console.log(id,password);
+    // console.log(id,password);
     return new Promise((resolve, reject) =>{
         conn.query(`UPDATE centeradmin SET password= '${password}' WHERE id =${id}`, (err, res)=>{
             // resolve(res);
