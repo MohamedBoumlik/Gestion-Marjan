@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {add_Center_Admin,createCadmin,deleteCadmin,updateCadmin,updateCadminPassword} = require('../controllers/cAdmin.controller');
+const {add_Center_Admin,createCadmin,deleteCadmin,updateCadmin,updateCadminPassword} = require('../../controllers/adminG/cAdmin.controller');
 
 router.get('/cAdmin',add_Center_Admin);
 router.post('/create',createCadmin);

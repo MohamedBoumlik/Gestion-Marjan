@@ -1,4 +1,4 @@
-const { get_cAdmin,Add_cAdmin,delete_cAdmin,update_cAdmin, update_cAdmin_Password } = require('../models/cAdmin.model');
+const { get_cAdmin,Add_cAdmin,delete_cAdmin,update_cAdmin, update_cAdmin_Password } = require('../../models/adminG/cAdmin.model');
 var nodemailer = require('nodemailer');
 
 exports.add_Center_Admin = async (req,res) => {

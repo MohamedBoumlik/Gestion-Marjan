@@ -1,4 +1,4 @@
-const conn = require('../database/connection');
+const conn = require('../../database/connection');
 
 exports.getAdminData = () =>{
     return new Promise((resolve, reject) =>{

@@ -1,6 +1,6 @@
-const { getAdminData } = require('../models/admin.model')
+const { getAdminData } = require('../../models/adminG/admin.model')
 var jwt = require('jsonwebtoken');
-var  conn = require('../database/connection')
+var  conn = require('../../database/connection')
 
 exports.getAdmin = (req, res)=> {
 
@@ -33,7 +33,7 @@ exports.logAdmin = async(req, res)=> {
     // res.status(200).json(token);
     console.log('admin loged in successfully');
 
-    conn.query(`UPDATE admin SET ? WHERE id =${AdminG.id}`, {
+    conn.query(`UPDATE admin SET ? WHERE id =${CAdmin.id}`, {
       token: token,
     });
     
