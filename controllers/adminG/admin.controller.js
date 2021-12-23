@@ -1,6 +1,6 @@
-const { getAdminData } = require('../models/admin.model')
+const { getAdminData } = require('../../models/adminG/admin.model')
 var jwt = require('jsonwebtoken');
-var  conn = require('../database/connection')
+var  conn = require('../../database/connection')
 
 exports.getAdmin = (req, res)=> {
 
