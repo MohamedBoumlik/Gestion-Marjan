@@ -22,8 +22,14 @@ app.use('/api/promo',promo);
 const centeradmin = require('./routes/centeradmin/Login_Route');
 const crudcenteradmin = require('./routes/centeradmin/crudcenteradmin.Route');
 
+// ---------------- center admin routes -------------
+
+const chefrayon = require('./routes/ChefRayon/LoginchefRayon.route');
+
 
 // ****** center admin ********
 app.use('/api/centeradmin',centeradmin);
 app.use('/api/centeradmin',crudcenteradmin);
 
+// ****** chef rayon ********
+app.use('/api/chefrayon',chefrayon);
