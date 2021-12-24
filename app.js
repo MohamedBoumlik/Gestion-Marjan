@@ -10,6 +10,12 @@ app.listen(3000);
 // ---------------- center admin routes -------------
 const admin = require('./routes/adminG/admin.route');
 const cAdmin = require('./routes/adminG/cAdmin.route');
+const promo = require('./routes/centeradmin/promo.route');
+
+
+app.use('/api/admin',admin);
+app.use('/api/cAdmin',cAdmin);
+app.use('/api/promo',promo);
 
 // ---------------- center admin routes -------------
 
@@ -20,10 +26,6 @@ const crudcenteradmin = require('./routes/centeradmin/crudcenteradmin.Route');
 
 const chefrayon = require('./routes/ChefRayon/LoginchefRayon.route');
 
-
-// ****** admin ********
-app.use('/api/admin',admin);
-app.use('/api/cAdmin',cAdmin);
 
 // ****** center admin ********
 app.use('/api/centeradmin',centeradmin);
