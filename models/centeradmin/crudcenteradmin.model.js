@@ -17,12 +17,14 @@ exports.Add_crudcenterAdmin = (id,nom,email,password,category_fk) => {
 }
 
 exports.delete_crudcenterAdmin = (id_res) => {
+    console.log(id_res);
     return new Promise((resolve, reject) =>{
-        conn.query(`delete from chefrayon where id=${id_res}`, (err, res)=>{
+        conn.query(`delete from chefrayon WHERE id_res =${id_res}`, (err, res)=>{
             // resolve(res);
             console.log('Deleted successfully');
         });
     });
+    // console.log(id_res);
 }
 
 exports.update_crudcenterAdmin = (id_res,nom,email,password,category_fk) => {
@@ -33,6 +35,7 @@ exports.update_crudcenterAdmin = (id_res,nom,email,password,category_fk) => {
             console.log("updated successfully");
         });
     });
+    // console.log(id_res);
 }
 
 exports.update_crudcenterAdmin_Password = (id_res,password) => {

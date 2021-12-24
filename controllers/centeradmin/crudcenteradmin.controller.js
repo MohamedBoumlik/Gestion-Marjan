@@ -33,8 +33,8 @@ exports.create_Chef_Rayon = async(req,res) => {
 }
 
 exports.delete_Chef_Rayon = async(req,res) => {
-    // console.log(req.params);
-    delete_crudcenterAdmin(req.params.id_res);
+    // console.log(req.params.id_res);
+    delete_crudcenterAdmin(req.params.id);
 
 }
 
